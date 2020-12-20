@@ -1,0 +1,40 @@
+/* we want to get rid of any spacing*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Now we are going to grab the elements and get them to fit on the screen  */
+#camera,
+#camView,
+#camSensor,
+#camOutput {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* this is going to make it so the video takes up the whole screen */
+    object-fit: cover;
+}
+
+
+/* for the front camera we are going to mirror it so it looks correct  */
+#camView,
+#camSensor,
+#camOutput {
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+.taken {
+    border: solid 5px #fff;
+    height: 100% !important;
+    width: 100% !important;
+    transition: all 0.8s ease-in;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
