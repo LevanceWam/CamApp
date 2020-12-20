@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
+
+<body>
+    <main id="camera">
+        <!-- this is going to be like a real camera sensor this is 
+        Where we are going to grab a frame from video we're going to stream  -->
+        <canvas id="camSensor"></canvas>
+
+        <!-- accessing the devices camera and displaying the video -->
+        <video src="" id="camView"></video>
+
+        <!-- preventing the empty image. Stops the browser from showing secruity warning -->
+        <img src="" id="camOutput" />
+
+        <button id="flip">Flip</button>
+        <button id="camBtn">Snap</button>
+    </main>
+</body>
+<script src="camera.js"></script>
+
+</html>
